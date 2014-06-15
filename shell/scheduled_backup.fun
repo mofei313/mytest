@@ -70,7 +70,7 @@ function delete_file(){
 
 function cd_file_dir(){
 	#cat file_dir.txt | while read FILE_DIR
-	cat $1 | while read FILE_DIR
+	cat $1 | while read FILE_DIR # 文件目录由变量传入
 	do
 		if [ ! -d "$FILE_DIR" ]
 		then
